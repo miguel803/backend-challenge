@@ -16,9 +16,9 @@ services:
   postgres:
     image: postgres
     environment:
-      POSTGRES_DB: api_database
+      POSTGRES_DB: api_db
       POSTGRES_USER: user
-      POSTGRES_PASSWORD: pass#123
+      POSTGRES_PASSWORD: pass
     ports:
       - "5433:5432"
     networks:
@@ -30,7 +30,7 @@ services:
     build:
       context: .
       dockerfile: ./api_valor_do_metro_quadrado/Dockerfile
-    env_file: .dev-env
+    env_file: ./api_valor_do_metro_quadrado/.dev-env
     ports:
       - "8000:8000"
     networks:
