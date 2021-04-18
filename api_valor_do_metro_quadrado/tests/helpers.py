@@ -1,12 +1,23 @@
 import os
 from unittest import mock
 
+from fastapi.testclient import TestClient
 import pytest
-from dotenv import dotenv_values
 
 
 @pytest.fixture
-def mock_env_vars():
-    config = dotenv_values("./api_valor_do_metro_quadrado/.dev-env")
-    with mock.patch.dict(os.environ, config):
+def mock_database_env_vars():
+    env_vars = {
+        "DB_NAME": "test_db",
+        "DB_USER": "user",
+        "DB_PASSWORD": "pass",
+        "DB_HOST": "localhost",
+        "DB_PORT": "5432",
+    }
+    with mock.patch.dict(os.environ, env_vars):
         yield
+
+
+def get_client():
+    from api_valor_do_metro_quadrado.main import app
+    return TestClient(app)

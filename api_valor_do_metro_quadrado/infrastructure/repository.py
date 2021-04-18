@@ -1,6 +1,6 @@
 import databases
 
-from app.infrastructure.database import get_database_url
+from api_valor_do_metro_quadrado.infrastructure.database import get_database_url
 
 
 database_url = get_database_url()
