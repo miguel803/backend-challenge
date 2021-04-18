@@ -30,12 +30,7 @@ services:
     build:
       context: .
       dockerfile: ./api_valor_do_metro_quadrado/Dockerfile
-    environment:
-      DB_NAME: api_db
-      DB_USER: user
-      DB_PASSWORD: pass#123
-      DB_HOST: postgres
-      DB_PORT: 5432
+    env_file: .dev-env
     ports:
       - "8000:8000"
     networks:
