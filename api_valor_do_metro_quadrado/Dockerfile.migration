@@ -1,0 +1,9 @@
+FROM python:3.7-slim
+
+WORKDIR /app/api_valor_do_metro_quadrado
+
+COPY ./api_valor_do_metro_quadrado/infrastructure ./infrastructure
+
+COPY ./api_valor_do_metro_quadrado/alembic.ini .
+
+RUN pip install --upgrade pip && pip install alembic psycopg2-binary

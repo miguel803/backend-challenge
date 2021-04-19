@@ -43,6 +43,23 @@ services:
       - postgres
     depends_on:
       - postgres
+      - api1_migration
+  
+  api1_migration:
+    build:
+      context: .
+      dockerfile: ./api_valor_do_metro_quadrado/Dockerfile.migration
+    environment:
+      DB_NAME: api_db
+      DB_USER: user
+      DB_PASSWORD: pass
+      DB_HOST: postgres
+      DB_PORT: 5432
+    command: bash -c "alembic upgrade head"
+    networks:
+      - postgres
+    depends_on:
+      - postgres
 
 networks:
   api1:
