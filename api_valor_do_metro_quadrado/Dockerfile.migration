@@ -1,6 +1,6 @@
 FROM python:3.7-slim
 
-WORKDIR /app/api_valor_do_metro_quadrado
+WORKDIR /app
 
 COPY ./api_valor_do_metro_quadrado/infrastructure ./infrastructure
 
