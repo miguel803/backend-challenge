@@ -8,3 +8,10 @@ def test_route_get_imovel():
     response = client.get('/imovel/')
 
     assert response.status_code == 200
+
+
+def test_route_get_imovel_metragem_invalida():
+    client = TestClient(app)
+    response = client.get('/imovel/?metragem=8')
+
+    assert response.status_code == 400
