@@ -7,7 +7,7 @@ from api_valor_do_imovel.domain.entities.imovel import Imovel
 router = APIRouter()
 
 
-@router.get("/imovel/")
+@router.get("/imovel/", response_model=Imovel)
 async def get_imovel(metragem: int = None):
     if metragem:
         try:
