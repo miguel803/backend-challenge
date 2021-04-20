@@ -10,4 +10,4 @@ router = APIRouter()
 @router.get("/metro_quadrado/", tags=["metro_quadrado"], response_model=MetroQuadrado, response_model_exclude=["id", "data_de_cadastro"])
 async def get_metro_quadrado():
     obj = await MetroQuadradoRepository.get()
-    return dict(obj)
+    return obj

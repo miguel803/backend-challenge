@@ -1,5 +1,6 @@
 import os
 from unittest import mock
+import asyncio
 
 from fastapi.testclient import TestClient
 import pytest
@@ -21,3 +22,10 @@ def mock_database_env_vars():
 def get_client():
     from api_valor_do_metro_quadrado.main import app
     return TestClient(app)
+
+
+def mock_async_function_result(result):
+    return_value = asyncio.Future()
+    return_value.set_result(result)
+
+    return return_value

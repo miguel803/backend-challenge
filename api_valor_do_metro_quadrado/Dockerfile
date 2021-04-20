@@ -8,3 +8,5 @@ ENV PORT=8081
 COPY ./api_valor_do_metro_quadrado/ .
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
+
+RUN python -m pytest
