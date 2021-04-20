@@ -2,7 +2,7 @@ import logging
 
 from fastapi import FastAPI
 
-from api_valor_do_metro_quadrado.infrastructure.repository import database
+from api_valor_do_metro_quadrado.infrastructure.repositories import database
 from api_valor_do_metro_quadrado.application.log import logger
 from api_valor_do_metro_quadrado.application.routes import metro_quadrado
 

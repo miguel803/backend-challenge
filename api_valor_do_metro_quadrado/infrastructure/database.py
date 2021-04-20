@@ -1,5 +1,7 @@
 import os
 
+import databases
+
 
 def get_database_url():
     user = os.environ["DB_USER"]
@@ -9,3 +11,10 @@ def get_database_url():
     db_name = os.environ["DB_NAME"]
 
     return f"postgresql://{user}:{password}@{host}:{port}/{db_name}"
+
+
+def create_database_connection():
+    database_url = get_database_url()
+    database = databases.Database(database_url)
+
+    return database
