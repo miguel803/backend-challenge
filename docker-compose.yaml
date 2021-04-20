@@ -40,6 +40,7 @@ services:
       - "8081:8081"
     networks:
       - api1
+      - api2
       - postgres
     depends_on:
       - postgres
@@ -60,9 +61,22 @@ services:
       - postgres
     depends_on:
       - postgres
+  
+  api2:
+    build:
+      context: .
+      dockerfile: ./api_valor_do_imovel/Dockerfile
+    ports:
+      - "8082:8082"
+    networks:
+      - api2
+      - postgres
+    depends_on:
+      - postgres
 
 networks:
   api1:
+  api2:
   postgres:
 
 volumes:
