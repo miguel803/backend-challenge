@@ -1,4 +1,4 @@
-![Build Status] (https://travis-ci.org/miguel803/backend-challenge.svg?branch=main)
+![Build Status](https://travis-ci.org/miguel803/backend-challenge.svg?branch=main)
 
 # inGaia - Back-end Developer
 
