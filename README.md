@@ -18,4 +18,4 @@
 
 - O projeto está dividido em três camadas principais: Aplicação, Domínio e Infraestrutura
 
-![Imagem Ilustrativa](https://https://github.com/miguel803/backend-challenge/blob/main/ddd-layers.png?raw=true)
+![Imagem Ilustrativa](https://github.com/miguel803/backend-challenge/blob/main/docs/arquitetura/ddd-layers.png)
