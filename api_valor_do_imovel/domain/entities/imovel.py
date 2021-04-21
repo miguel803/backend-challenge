@@ -7,6 +7,7 @@ MAX_METRAGEM = 10000
 
 class Imovel(BaseModel):
     metragem: int
+    valor: float = 0.0
 
     @validator('metragem')
     def validate_metragem(cls, v):

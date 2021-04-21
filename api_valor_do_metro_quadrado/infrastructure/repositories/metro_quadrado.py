@@ -22,4 +22,6 @@ class MetroQuadradoRepository:
     @classmethod
     async def get(cls):
         statement = cls._table.select()
-        return await database.fetch_one(statement)
+        result = await database.fetch_one(statement)
+
+        return dict(result)

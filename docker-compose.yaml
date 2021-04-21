@@ -66,6 +66,8 @@ services:
     build:
       context: .
       dockerfile: ./api_valor_do_imovel/Dockerfile
+    environment: 
+      API_METRO_QUADRADO_URL: http://api1:8081/metro_quadrado/
     ports:
       - "8082:8082"
     networks:
