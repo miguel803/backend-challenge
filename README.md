@@ -1,6 +1,4 @@
-![Build Status](https://travis-ci.org/miguel803/backend-challenge.svg?branch=main)
-
-# inGaia - Back-end Developer
+# inGaia - Back-end Developer  ![Build Status](https://travis-ci.org/miguel803/backend-challenge.svg?branch=main)
 
 ## Instruções para Execução dos Microsserviços
 
