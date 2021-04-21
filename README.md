@@ -2,9 +2,13 @@
 
 ## Instruções para Execução dos Microsserviços
 
+### Para executar o projeto na máquina local será necessário ter configurado Docker e Docker-Compose
+
 - git clone https://github.com/migueleichler/backend-challenge.git
 
 - docker-compose up --build
+
+- para testar o fluxo principal basta realizar uma consulta na API 1. Exemplo: http://localhost:8081/imovel/?metragem=100
 
 ## Documentação das API's:
 
