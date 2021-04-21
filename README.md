@@ -8,7 +8,7 @@
 
 - docker-compose up --build
 
-- para testar o fluxo principal basta realizar uma consulta na API 1. Exemplo: http://localhost:8081/imovel/?metragem=100
+- para testar o fluxo principal basta realizar uma consulta na API 2. Exemplo: http://localhost:8082/imovel/?metragem=100
 
 ## Documentação das API's:
 
