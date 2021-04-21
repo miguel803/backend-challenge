@@ -17,3 +17,5 @@
 - O projeto foi estruturado com base no padrão de arquitetura Domain Driven Design, criado por Eric Evans.
 
 - O projeto está dividido em três camadas principais: Aplicação, Domínio e Infraestrutura
+
+![Imagem Ilustrativa](https://https://github.com/miguel803/backend-challenge/blob/main/ddd-layers.png?raw=true)
