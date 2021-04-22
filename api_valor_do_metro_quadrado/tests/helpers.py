@@ -26,7 +26,8 @@ def get_client():
 
 def mock_async_function_result(result):
     import sys
-    if sys.version_info[0] >= 3.8:
+    version = f'{sys.version_info[0]}.{sys.version_info[1]}'
+    if version < '3.8':
         return_value = asyncio.Future()
         return_value.set_result(result)
     else:
