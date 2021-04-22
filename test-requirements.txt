@@ -1,4 +1,0 @@
-pytest==6.2.3
-python-dotenv==0.17.0
-requests==2.25.1
--r api_valor_do_metro_quadrado/requirements.txt

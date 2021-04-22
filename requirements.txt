@@ -1,1 +1,2 @@
 -r api_valor_do_metro_quadrado/requirements.txt
+-r api_valor_do_imovel/requirements.txt
